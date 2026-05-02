@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🧵</text></svg>">
+    <title>Все разделы — Мастер Стиля</title>
+    <meta name="description" content="Все тематические разделы сайта Мастер Стиля. Удобная навигация по категориям.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://master-stilya.vercel.app/categories.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1777712812">
+    <style>
+        .categories-hero {
+            background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 30%, #f8fafc 100%);
+            border-bottom: 1px solid var(--border);
+            padding: 48px 0 40px; text-align: center;
+        }
+        .categories-hero h1 { font-size: 2rem; color: var(--text); margin-bottom: 8px; }
+        .categories-hero p { color: var(--text-secondary); font-size: 1.1rem; }
+        .cat-page-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px; padding: 40px 0 60px;
+        }
+        .cat-page-card {
+            display: flex; align-items: flex-start; gap: 16px;
+            padding: 24px; border-radius: 16px;
+            background: var(--card-bg, #fff);
+            border: 1px solid var(--border);
+            text-decoration: none; color: var(--text);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .cat-page-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+            border-color: var(--primary);
+        }
+        .cat-page-icon {
+            font-size: 2.4rem; flex-shrink: 0;
+            width: 56px; height: 56px; display: flex;
+            align-items: center; justify-content: center;
+            background: linear-gradient(135deg, #eff6ff, #f0f9ff);
+            border-radius: 14px;
+        }
+        .cat-page-name { font-size: 1.15rem; font-weight: 700; margin-bottom: 4px; }
+        .cat-page-desc { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.4; margin-bottom: 6px; }
+        .cat-page-count {
+            font-size: 0.82rem; font-weight: 600;
+            color: var(--primary); background: rgba(37,99,235,0.08);
+            padding: 3px 10px; border-radius: 20px; display: inline-block;
+        }
+        @media (max-width: 640px) {
+            .cat-page-grid { grid-template-columns: 1fr; gap: 12px; padding: 24px 0 40px; }
+            .cat-page-card { padding: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">🧵</span>
+                <span>Мастер Стиля</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Меню" id="menuBtn">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="/category/platya-i-sarafany/" class="nav-link">👗 Платья и сарафаны</a>
+<a href="/category/dzhinsy/" class="nav-link">👖 Джинсы</a>
+<a href="/category/bryuki-i-shorty/" class="nav-link">🩳 Брюки и шорты</a>
+<a href="/category/yubki/" class="nav-link">👚 Юбки</a>
+<div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="dropdown-menu"><a href="/category/platya-i-sarafany/" class="dropdown-item">👗 Платья и сарафаны</a>
+<a href="/category/dzhinsy/" class="dropdown-item">👖 Джинсы</a>
+<a href="/category/bryuki-i-shorty/" class="dropdown-item">🩳 Брюки и шорты</a>
+<a href="/category/yubki/" class="dropdown-item">👚 Юбки</a>
+<a href="/category/verkhnyaya-odezhda/" class="dropdown-item">🧥 Верхняя одежда</a>
+<a href="/category/golovnye-ubory/" class="dropdown-item">🧢 Головные уборы</a>
+<a href="/category/kofty-i-svitery/" class="dropdown-item">🧶 Кофты и свитеры</a>
+<a href="/category/rubashki-i-bluzki/" class="dropdown-item">👔 Рубашки и блузки</a>
+<a href="/category/futbolki-i-topy/" class="dropdown-item">👕 Футболки и топы</a>
+<a href="/category/pidzhaki-i-kostyumy/" class="dropdown-item">🤵 Пиджаки и костюмы</a>
+<a href="/category/nizhnee-belyo-i-kolgotki/" class="dropdown-item">👙 Нижнее бельё и колготки</a>
+<a href="/category/voennaya-forma/" class="dropdown-item">🪖 Военная форма</a>
+<a href="/category/aksessuary/" class="dropdown-item">👜 Аксессуары</a>
+<a href="/category/sharfy-i-platki/" class="dropdown-item">🧣 Шарфы и платки</a>
+<a href="/category/stil-i-moda/" class="dropdown-item">👠 Стиль и мода</a>
+<a href="/category/detskaya-odezhda/" class="dropdown-item">🧸 Детская одежда</a>
+<a href="/category/rukodelie-i-diy/" class="dropdown-item">🧵 Рукоделие и DIY</a>
+<a href="/category/ukhod-za-odezhdoj/" class="dropdown-item">🧼 Уход за одеждой</a>
+<a href="/category/natsionalnaya-i-istoricheskaya-odezhda/" class="dropdown-item">👘 Национальная и историческая одежда</a>
+<a href="/category/sportivnaya-odezhda/" class="dropdown-item">🏃 Спортивная одежда</a>
+<a href="/category/spetsodezhda/" class="dropdown-item">🦺 Спецодежда</a>
+<a href="/category/odezhda-dlya-zhivotnykh/" class="dropdown-item">🐕 Одежда для животных</a>
+<a href="/category/obuv/" class="dropdown-item">👟 Обувь</a>
+<a href="/category/drugoe/" class="dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="categories-hero">
+        <div class="container">
+            <h1>📂 Все разделы</h1>
+            <p>Удобная навигация по всем тематическим разделам</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="cat-page-grid">
+            <a href="/category/platya-i-sarafany/" class="cat-page-card">
+            <div class="cat-page-icon">👗</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Платья и сарафаны</div>
+                <div class="cat-page-desc">Всё о платьях и сарафанах: выкройки, советы по пошиву, подбор ткани и фасона на любой случай.</div>
+            </div>
+        </a>
+<a href="/category/dzhinsy/" class="cat-page-card">
+            <div class="cat-page-icon">👖</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Джинсы</div>
+                <div class="cat-page-desc">Гид по джинсам: как выбрать фасон, отличить качественный деним и с чем сочетать разные модели.</div>
+            </div>
+        </a>
+<a href="/category/bryuki-i-shorty/" class="cat-page-card">
+            <div class="cat-page-icon">🩳</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Брюки и шорты</div>
+                <div class="cat-page-desc">Статьи о брюках и шортах: построение выкроек, подгонка по фигуре и правила сочетания в образе.</div>
+            </div>
+        </a>
+<a href="/category/yubki/" class="cat-page-card">
+            <div class="cat-page-icon">👚</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Юбки</div>
+                <div class="cat-page-desc">Юбки от А до Я: виды кроя, пошаговые инструкции по пошиву и советы по выбору длины и силуэта.</div>
+            </div>
+        </a>
+<a href="/category/verkhnyaya-odezhda/" class="cat-page-card">
+            <div class="cat-page-icon">🧥</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Верхняя одежда</div>
+                <div class="cat-page-desc">Разбираемся в верхней одежде: как выбрать пальто или куртку, на что смотреть при покупке и пошиве.</div>
+            </div>
+        </a>
+<a href="/category/golovnye-ubory/" class="cat-page-card">
+            <div class="cat-page-icon">🧢</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Головные уборы</div>
+                <div class="cat-page-desc">Головные уборы: схемы вязания шапок, выкройки кепок и беретов, советы по подбору к форме лица.</div>
+            </div>
+        </a>
+<a href="/category/kofty-i-svitery/" class="cat-page-card">
+            <div class="cat-page-icon">🧶</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Кофты и свитеры</div>
+                <div class="cat-page-desc">Кофты и свитеры: схемы вязания, обзоры пряжи и рекомендации по уходу за трикотажными изделиями.</div>
+            </div>
+        </a>
+<a href="/category/rubashki-i-bluzki/" class="cat-page-card">
+            <div class="cat-page-icon">👔</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Рубашки и блузки</div>
+                <div class="cat-page-desc">Рубашки и блузки: выкройки, техники пошива воротников и манжет, правила посадки по фигуре.</div>
+            </div>
+        </a>
+<a href="/category/futbolki-i-topy/" class="cat-page-card">
+            <div class="cat-page-icon">👕</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Футболки и топы</div>
+                <div class="cat-page-desc">Футболки и топы: как сшить базовую вещь своими руками, выбор ткани и декорирование принтами.</div>
+            </div>
+        </a>
+<a href="/category/pidzhaki-i-kostyumy/" class="cat-page-card">
+            <div class="cat-page-icon">🤵</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Пиджаки и костюмы</div>
+                <div class="cat-page-desc">Пиджаки и костюмы: тонкости конструирования, правила посадки и нюансы пошива классической одежды.</div>
+            </div>
+        </a>
+<a href="/category/nizhnee-belyo-i-kolgotki/" class="cat-page-card">
+            <div class="cat-page-icon">👙</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Нижнее бельё и колготки</div>
+                <div class="cat-page-desc">Нижнее бельё и колготки: как подобрать размер, выбрать материал и сшить бельё самостоятельно.</div>
+            </div>
+        </a>
+<a href="/category/voennaya-forma/" class="cat-page-card">
+            <div class="cat-page-icon">🪖</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Военная форма</div>
+                <div class="cat-page-desc">Военная форма: история, стандарты пошива, обзор уставных требований и тактического снаряжения.</div>
+            </div>
+        </a>
+<a href="/category/aksessuary/" class="cat-page-card">
+            <div class="cat-page-icon">👜</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Аксессуары</div>
+                <div class="cat-page-desc">Аксессуары: мастер-классы по пошиву сумок, ремней и перчаток, советы по подбору к одежде.</div>
+            </div>
+        </a>
+<a href="/category/sharfy-i-platki/" class="cat-page-card">
+            <div class="cat-page-icon">🧣</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Шарфы и платки</div>
+                <div class="cat-page-desc">Шарфы и платки: способы завязывания, выбор материала и пошаговые инструкции по изготовлению.</div>
+            </div>
+        </a>
+<a href="/category/stil-i-moda/" class="cat-page-card">
+            <div class="cat-page-icon">👠</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Стиль и мода</div>
+                <div class="cat-page-desc">Стиль и мода: актуальные тренды, разборы модных образов и советы по формированию гардероба.</div>
+            </div>
+        </a>
+<a href="/category/detskaya-odezhda/" class="cat-page-card">
+            <div class="cat-page-icon">🧸</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Детская одежда</div>
+                <div class="cat-page-desc">Детская одежда: выкройки по возрастам, выбор безопасных тканей и идеи для пошива своими руками.</div>
+            </div>
+        </a>
+<a href="/category/rukodelie-i-diy/" class="cat-page-card">
+            <div class="cat-page-icon">🧵</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Рукоделие и DIY</div>
+                <div class="cat-page-desc">Рукоделие и DIY: пошаговые мастер-классы, обзоры инструментов и техники для создания вещей вручную.</div>
+            </div>
+        </a>
+<a href="/category/ukhod-za-odezhdoj/" class="cat-page-card">
+            <div class="cat-page-icon">🧼</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Уход за одеждой</div>
+                <div class="cat-page-desc">Уход за одеждой: как правильно стирать, гладить, хранить и ремонтировать вещи, чтобы они служили дольше.</div>
+            </div>
+        </a>
+<a href="/category/natsionalnaya-i-istoricheskaya-odezhda/" class="cat-page-card">
+            <div class="cat-page-icon">👘</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Национальная и историческая одежда</div>
+                <div class="cat-page-desc">Национальная и историческая одежда: происхождение костюмов, символика элементов и традиции пошива.</div>
+            </div>
+        </a>
+<a href="/category/sportivnaya-odezhda/" class="cat-page-card">
+            <div class="cat-page-icon">🏃</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Спортивная одежда</div>
+                <div class="cat-page-desc">Спортивная одежда: как выбрать экипировку под вид спорта, обзоры тканей и технологий.</div>
+            </div>
+        </a>
+<a href="/category/spetsodezhda/" class="cat-page-card">
+            <div class="cat-page-icon">🦺</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Спецодежда</div>
+                <div class="cat-page-desc">Спецодежда: требования ГОСТов, виды защитной одежды и советы по выбору для разных профессий.</div>
+            </div>
+        </a>
+<a href="/category/odezhda-dlya-zhivotnykh/" class="cat-page-card">
+            <div class="cat-page-icon">🐕</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Одежда для животных</div>
+                <div class="cat-page-desc">Одежда для животных: выкройки комбинезонов и попон для собак и кошек, подбор размера и материала.</div>
+            </div>
+        </a>
+<a href="/category/obuv/" class="cat-page-card">
+            <div class="cat-page-icon">👟</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Обувь</div>
+                <div class="cat-page-desc">Обувь: как определить размер, выбрать колодку и ухаживать за обувью из разных материалов.</div>
+            </div>
+        </a>
+<a href="/category/drugoe/" class="cat-page-card">
+            <div class="cat-page-icon">📁</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Другое</div>
+                <div class="cat-page-desc">Полезные статьи, которые не вошли в основные рубрики: лайфхаки, обзоры и необычные находки.</div>
+            </div>
+        </a>
+
+        </div>
+    </main>
+
+    <footer class="site-footer-premium">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">🧵 Мастер Стиля</div>
+                    <p class="footer-about">Энциклопедия моды, рукоделия и военного этикета для тех, кто создает и носит одежду с умом.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul><li><a href="/category/platya-i-sarafany/">👗 Платья и сарафаны</a></li>
+<li><a href="/category/dzhinsy/">👖 Джинсы</a></li>
+<li><a href="/category/bryuki-i-shorty/">🩳 Брюки и шорты</a></li>
+<li><a href="/category/yubki/">👚 Юбки</a></li>
+<li><a href="/category/verkhnyaya-odezhda/">🧥 Верхняя одежда</a></li>
+<li><a href="/category/golovnye-ubory/">🧢 Головные уборы</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/about.html">О проекте</a></li>
+                        <li><a href="/categories.html">Все разделы</a></li>
+                        <li><a href="/contact.html">Контакты</a></li>
+                        <li><a href="/privacy.html">Конфиденциальность</a></li>
+                        <li><a href="/sitemap.xml">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Мастер Стиля. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-popup">
+        <div class="cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="cookie-btn">Принять</button>
+        </div>
+    </div>
+
+    <script>
+    document.getElementById('menuBtn')?.addEventListener('click', () => {
+        document.getElementById('mainNav')?.classList.toggle('open');
+    });
+    </script>
+</body>
+</html>
