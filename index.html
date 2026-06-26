@@ -77,303 +77,158 @@
         </div>
     </header>
 
-    <!-- BLOCK 1: Hero -->
-    <section class="pb-hp-hero">
-        <div class="pb-hp-hero-bg"></div>
-        <div class="pb-container pb-hp-hero-inner">
-            <div class="pb-hp-hero-icon-wrap"><span class="pb-hp-hero-icon">🧵</span></div>
-            <h1>Мастер Стиля — <span class="pb-hp-hero-accent">знания и традиции</span></h1>
-            <p class="pb-hp-hero-desc">Полное руководство по созданию гардероба, уходу за вещами и соблюдению протокола.</p>
-            <div class="pb-hp-hero-search">
-                <div class="pb-search-box">
-                    <input type="text" id="globalSearchInput" placeholder="🔍 Найти статью..." autocomplete="off">
-                    <div class="search-dropdown" id="globalSearchDropdown"></div>
-                </div>
-            </div>
-            <div class="pb-hp-hero-pills">
-                <a href="/category/platya-i-sarafany/" class="pb-hero-pill">👗 Платья и сарафаны</a> <a href="/category/dzhinsy/" class="pb-hero-pill">👖 Джинсы</a> <a href="/category/bryuki-i-shorty/" class="pb-hero-pill">🩳 Брюки и шорты</a> <a href="/category/yubki/" class="pb-hero-pill">👚 Юбки</a> <a href="/category/verkhnyaya-odezhda/" class="pb-hero-pill">🧥 Верхняя одежда</a> <a href="/category/golovnye-ubory/" class="pb-hero-pill">🧢 Головные уборы</a> <a href="/category/kofty-i-svitery/" class="pb-hero-pill">🧶 Кофты и свитеры</a> <a href="/category/rubashki-i-bluzki/" class="pb-hero-pill">👔 Рубашки и блузки</a> <a href="/category/futbolki-i-topy/" class="pb-hero-pill">👕 Футболки и топы</a> <a href="/category/pidzhaki-i-kostyumy/" class="pb-hero-pill">🤵 Пиджаки и костюмы</a> <a href="/category/nizhnee-belyo-i-kolgotki/" class="pb-hero-pill">👙 Нижнее бельё и колготки</a> <a href="/category/voennaya-forma/" class="pb-hero-pill">🪖 Военная форма</a> <a href="/category/aksessuary/" class="pb-hero-pill">👜 Аксессуары</a> <a href="/category/sharfy-i-platki/" class="pb-hero-pill">🧣 Шарфы и платки</a> <a href="/category/stil-i-moda/" class="pb-hero-pill">👠 Стиль и мода</a> <a href="/category/detskaya-odezhda/" class="pb-hero-pill">🧸 Детская одежда</a> <a href="/category/rukodelie-i-diy/" class="pb-hero-pill">🧵 Рукоделие и DIY</a> <a href="/category/ukhod-za-odezhdoj/" class="pb-hero-pill">🧼 Уход за одеждой</a> <a href="/category/natsionalnaya-i-istoricheskaya-odezhda/" class="pb-hero-pill">👘 Национальная и историческая одежда</a> <a href="/category/sportivnaya-odezhda/" class="pb-hero-pill">🏃 Спортивная одежда</a> <a href="/category/spetsodezhda/" class="pb-hero-pill">🦺 Спецодежда</a> <a href="/category/odezhda-dlya-zhivotnykh/" class="pb-hero-pill">🐕 Одежда для животных</a> <a href="/category/obuv/" class="pb-hero-pill">👟 Обувь</a> <a href="/category/drugoe/" class="pb-hero-pill">📁 Другое</a>
-            </div>
+    <!-- CHARACTER HOMEPAGE REDESIGN -->
+    <section class="ms-hero">
+        <div class="ms-hero-media" aria-hidden="true">
+            <img src="/static/img/home/characters/hero-atelier-open-left.jpg" alt="">
         </div>
-    </section>
-
-    <!-- BLOCK 2: Trust line -->
-    <div class="pb-hp-trust-line">
-        <div class="pb-container">
-            <div class="pb-hp-trust-items">
-                <span class="pb-hp-trust-item">✓ Проверено экспертами</span>
-                <span class="pb-hp-trust-sep">·</span>
-                <span class="pb-hp-trust-item">✓ Актуальная информация</span>
-                <span class="pb-hp-trust-sep">·</span>
-                <span class="pb-hp-trust-item">✓ Без рекламы</span>
-                <span class="pb-hp-trust-sep">·</span>
-                <span class="pb-hp-trust-item">✓ Бесплатный доступ</span>
-            </div>
-        </div>
-    </div>
-
-    <main class="pb-main">
-        <div class="pb-container">
-
-            <!-- BLOCK 3: Feature Grid -->
-            <section class="pb-hp-section" data-animate>
-                <div class="pb-hp-features">
-                    <div class="pb-hp-feature-card"><div class="pb-hp-feature-icon">🪡</div><div class="pb-hp-feature-title">Секреты рукоделия</div><div class="pb-hp-feature-desc">Освойте техники починки и создания вещей</div></div>
-<div class="pb-hp-feature-card"><div class="pb-hp-feature-icon">🎖️</div><div class="pb-hp-feature-title">Военный протокол</div><div class="pb-hp-feature-desc">Точные правила ношения формы и знаков отличия</div></div>
-<div class="pb-hp-feature-card"><div class="pb-hp-feature-icon">🧥</div><div class="pb-hp-feature-title">Умный гардероб</div><div class="pb-hp-feature-desc">Принципы подбора качественной и долговечной одежды</div></div>
+        <div class="pb-container ms-hero-inner">
+            <div class="ms-hero-copy">
+                <span class="ms-kicker">Ателье точного гардероба</span>
+                <h1>Мастер Стиля</h1>
+                <p>Одежда раскрывается в деталях: как садится, из чего сшита, чем поддержать образ и как сохранить вещь в хорошем виде.</p>
+                <div class="ms-hero-search">
+                    <div class="pb-search-box">
+                        <input type="text" id="globalSearchInput" placeholder="Найти фасон, ткань или инструкцию" autocomplete="off">
+                        <div class="search-dropdown" id="globalSearchDropdown"></div>
+                    </div>
                 </div>
-            </section>
-
-            <!-- BLOCK 4: Categories -->
-            <section class="pb-hp-section" data-animate>
-                <h2 class="pb-hp-section-title">📂 Разделы</h2>
-                <div class="pb-hp-cat-list">
-                    <a href="/category/platya-i-sarafany/" class="pb-hp-cat-card" style="--cat-hue:153">
-            <span class="pb-hp-cat-emoji">👗</span>
-            <span class="pb-hp-cat-name">Платья и сарафаны</span>
-            <span class="pb-hp-cat-desc">Элегантные модели для любого сезона и случая</span>
-        </a>
-<a href="/category/dzhinsy/" class="pb-hp-cat-card" style="--cat-hue:29">
-            <span class="pb-hp-cat-emoji">👖</span>
-            <span class="pb-hp-cat-name">Джинсы</span>
-            <span class="pb-hp-cat-desc">Гид по фасонам, тканям и правильной посадке</span>
-        </a>
-<a href="/category/bryuki-i-shorty/" class="pb-hp-cat-card" style="--cat-hue:160">
-            <span class="pb-hp-cat-emoji">🩳</span>
-            <span class="pb-hp-cat-name">Брюки и шорты</span>
-            <span class="pb-hp-cat-desc">Универсальные решения для офиса и отдыха</span>
-        </a>
-<a href="/category/yubki/" class="pb-hp-cat-card" style="--cat-hue:288">
-            <span class="pb-hp-cat-emoji">👚</span>
-            <span class="pb-hp-cat-name">Юбки</span>
-            <span class="pb-hp-cat-desc">От классической длины мини до строгого макси</span>
-        </a>
-<a href="/category/verkhnyaya-odezhda/" class="pb-hp-cat-card" style="--cat-hue:250">
-            <span class="pb-hp-cat-emoji">🧥</span>
-            <span class="pb-hp-cat-name">Верхняя одежда</span>
-            <span class="pb-hp-cat-desc">Тепло и стиль в пальто, куртках и плащах</span>
-        </a>
-<a href="/category/golovnye-ubory/" class="pb-hp-cat-card" style="--cat-hue:358">
-            <span class="pb-hp-cat-emoji">🧢</span>
-            <span class="pb-hp-cat-name">Головные уборы</span>
-            <span class="pb-hp-cat-desc">Завершающий штрих вашего уникального образа</span>
-        </a>
-<a href="/category/kofty-i-svitery/" class="pb-hp-cat-card" style="--cat-hue:165">
-            <span class="pb-hp-cat-emoji">🧶</span>
-            <span class="pb-hp-cat-name">Кофты и свитеры</span>
-            <span class="pb-hp-cat-desc">Уютная вязаная классика и современные тренды</span>
-        </a>
-<a href="/category/rubashki-i-bluzki/" class="pb-hp-cat-card" style="--cat-hue:269">
-            <span class="pb-hp-cat-emoji">👔</span>
-            <span class="pb-hp-cat-name">Рубашки и блузки</span>
-            <span class="pb-hp-cat-desc">Базовые элементы гардероба для любых ситуаций</span>
-        </a>
-<a href="/category/futbolki-i-topy/" class="pb-hp-cat-card" style="--cat-hue:188">
-            <span class="pb-hp-cat-emoji">👕</span>
-            <span class="pb-hp-cat-name">Футболки и топы</span>
-            <span class="pb-hp-cat-desc">Комфортный повседневный стиль и качественные ткани</span>
-        </a>
-<a href="/category/pidzhaki-i-kostyumy/" class="pb-hp-cat-card" style="--cat-hue:185">
-            <span class="pb-hp-cat-emoji">🤵</span>
-            <span class="pb-hp-cat-name">Пиджаки и костюмы</span>
-            <span class="pb-hp-cat-desc">Безупречный крой для деловых встреч и событий</span>
-        </a>
-<a href="/category/nizhnee-belyo-i-kolgotki/" class="pb-hp-cat-card" style="--cat-hue:315">
-            <span class="pb-hp-cat-emoji">👙</span>
-            <span class="pb-hp-cat-name">Нижнее бельё и колготки</span>
-            <span class="pb-hp-cat-desc">Основа комфорта и здоровья вашего тела</span>
-        </a>
-<a href="/category/voennaya-forma/" class="pb-hp-cat-card" style="--cat-hue:327">
-            <span class="pb-hp-cat-emoji">🪖</span>
-            <span class="pb-hp-cat-name">Военная форма</span>
-            <span class="pb-hp-cat-desc">Правила ношения, знаки различия и этикет</span>
-        </a>
-<a href="/category/aksessuary/" class="pb-hp-cat-card" style="--cat-hue:193">
-            <span class="pb-hp-cat-emoji">👜</span>
-            <span class="pb-hp-cat-name">Аксессуары</span>
-            <span class="pb-hp-cat-desc">Детали, превращающие обычный outfit в стиль</span>
-        </a>
-<a href="/category/sharfy-i-platki/" class="pb-hp-cat-card" style="--cat-hue:156">
-            <span class="pb-hp-cat-emoji">🧣</span>
-            <span class="pb-hp-cat-name">Шарфы и платки</span>
-            <span class="pb-hp-cat-desc">Тепло, защита и яркий акцент в одежде</span>
-        </a>
-<a href="/category/stil-i-moda/" class="pb-hp-cat-card" style="--cat-hue:186">
-            <span class="pb-hp-cat-emoji">👠</span>
-            <span class="pb-hp-cat-name">Стиль и мода</span>
-            <span class="pb-hp-cat-desc">Аналитика трендов и законы создания капсулы</span>
-        </a>
-<a href="/category/detskaya-odezhda/" class="pb-hp-cat-card" style="--cat-hue:337">
-            <span class="pb-hp-cat-emoji">🧸</span>
-            <span class="pb-hp-cat-name">Детская одежда</span>
-            <span class="pb-hp-cat-desc">Безопасность, удобство и яркость для малышей</span>
-        </a>
-<a href="/category/rukodelie-i-diy/" class="pb-hp-cat-card" style="--cat-hue:21">
-            <span class="pb-hp-cat-emoji">🧵</span>
-            <span class="pb-hp-cat-name">Рукоделие и DIY</span>
-            <span class="pb-hp-cat-desc">Техники шитья, вышивки и реставрации вещей</span>
-        </a>
-<a href="/category/ukhod-za-odezhdoj/" class="pb-hp-cat-card" style="--cat-hue:3">
-            <span class="pb-hp-cat-emoji">🧼</span>
-            <span class="pb-hp-cat-name">Уход за одеждой</span>
-            <span class="pb-hp-cat-desc">Правильная стирка, глажка и хранение тканей</span>
-        </a>
-<a href="/category/natsionalnaya-i-istoricheskaya-odezhda/" class="pb-hp-cat-card" style="--cat-hue:278">
-            <span class="pb-hp-cat-emoji">👘</span>
-            <span class="pb-hp-cat-name">Национальная и историческая одежда</span>
-            <span class="pb-hp-cat-desc">Традиции костюма и историческая достоверность</span>
-        </a>
-<a href="/category/sportivnaya-odezhda/" class="pb-hp-cat-card" style="--cat-hue:204">
-            <span class="pb-hp-cat-emoji">🏃</span>
-            <span class="pb-hp-cat-name">Спортивная одежда</span>
-            <span class="pb-hp-cat-desc">Функциональность и технологии для активных тренировок</span>
-        </a>
-<a href="/category/spetsodezhda/" class="pb-hp-cat-card" style="--cat-hue:281">
-            <span class="pb-hp-cat-emoji">🦺</span>
-            <span class="pb-hp-cat-name">Спецодежда</span>
-            <span class="pb-hp-cat-desc">Защитные свойства и требования к рабочей одежде</span>
-        </a>
-<a href="/category/odezhda-dlya-zhivotnykh/" class="pb-hp-cat-card" style="--cat-hue:286">
-            <span class="pb-hp-cat-emoji">🐕</span>
-            <span class="pb-hp-cat-name">Одежда для животных</span>
-            <span class="pb-hp-cat-desc">Комфорт и защита питомцев в любую погоду</span>
-        </a>
-<a href="/category/obuv/" class="pb-hp-cat-card" style="--cat-hue:127">
-            <span class="pb-hp-cat-emoji">👟</span>
-            <span class="pb-hp-cat-name">Обувь</span>
-            <span class="pb-hp-cat-desc">Выбор идеальной пары для здоровья и стиля</span>
-        </a>
-<a href="/category/drugoe/" class="pb-hp-cat-card" style="--cat-hue:104">
-            <span class="pb-hp-cat-emoji">📁</span>
-            <span class="pb-hp-cat-name">Другое</span>
-            <span class="pb-hp-cat-desc">Разнообразные темы мира одежды и этикета</span>
-        </a>
-
-                </div>
-            </section>
-
-            <!-- BLOCK 5: Intro + Trust -->
-            <section class="pb-hp-section pb-hp-intro-trust" data-animate>
-        <div class="pb-container">
-            <div class="pb-hp-two-col">
-                <div class="pb-hp-col">
-                    <h2 class="pb-hp-col-title">📖 О проекте</h2>
-                    <p>Мастер Стиля — это глубокая энциклопедия, объединяющая тонкости высокой моды, секреты рукоделия и строгие правила военного этикета. Мы помогаем создавать безупречный образ и правильно ухаживать за вещами, опираясь на проверенные знания и традиции.</p>
-                </div>
-                <div class="pb-hp-col">
-                    <h2 class="pb-hp-col-title">🛡️ Почему нам доверяют</h2>
-                    <p>Наши материалы проходят строгую редактуру с привлечением историков моды и специалистов по текстилю. Мы гарантируем актуальность советов по уходу и точность в описании протокольных требований к форме.</p>
+                <div class="ms-route-row" aria-label="Быстрые маршруты">
+                    <a href="/category/platya-i-sarafany/">Фасон и посадка</a>
+                    <a href="/category/rukodelie-i-diy/">Ремонт и переделка</a>
+                    <a href="/category/ukhod-za-odezhdoj/">Ткань и уход</a>
+                    <a href="/category/voennaya-forma/">Форма и порядок</a>
                 </div>
             </div>
         </div>
     </section>
 
-            <!-- BLOCK 6: Latest articles -->
-            <section class="pb-hp-section" data-animate>
-                <h2 class="pb-hp-section-title">📰 Популярные материалы</h2>
-                <div class="pb-hp-articles-list">
-                    <a href="/articles/k/ka/kak-narisovat-kokoshnik-5-klass.html" class="pb-hp-article-card">
-            <div class="pb-hp-article-card-top">
-                <span class="pb-hp-article-cat">👘 Национальная и историческая одежда</span>
-                <span class="pb-hp-article-meta">⏱ 7 мин</span>
-            </div>
-            <span class="pb-hp-article-title">Как нарисовать кокошник 5 класс: поэтапный урок рисования</span>
-        </a>
-<a href="/articles/k/ka/kak-zashit-protertye-dzhinsy-mezhdu-nog-vruchnuyu-bez-zaplatki.html" class="pb-hp-article-card">
-            <div class="pb-hp-article-card-top">
-                <span class="pb-hp-article-cat">👖 Джинсы</span>
-                <span class="pb-hp-article-meta">⏱ 10 мин</span>
-            </div>
-            <span class="pb-hp-article-title">Как зашить джинсы между ног без заплатки: ручная штопка</span>
-        </a>
-<a href="/articles/v/vy/vyvesti-maslyanoe-pyatno-s-kurtki.html" class="pb-hp-article-card">
-            <div class="pb-hp-article-card-top">
-                <span class="pb-hp-article-cat">🧼 Уход за одеждой</span>
-                <span class="pb-hp-article-meta">⏱ 8 мин</span>
-            </div>
-            <span class="pb-hp-article-title">Как вывести масляное пятно с куртки: методы для разных тканей</span>
-        </a>
-<a href="/articles/k/ka/kak-sdelat-odezhdu-dlya-koshki.html" class="pb-hp-article-card">
-            <div class="pb-hp-article-card-top">
-                <span class="pb-hp-article-cat">🐕 Одежда для животных</span>
-                <span class="pb-hp-article-meta">⏱ 8 мин</span>
-            </div>
-            <span class="pb-hp-article-title">Как сшить одежду для кошки: выкройки и мастер-класс</span>
-        </a>
-<a href="/articles/s/sk/skolko-zvezd-na-pogonakh-u-starshego-lejtenanta.html" class="pb-hp-article-card">
-            <div class="pb-hp-article-card-top">
-                <span class="pb-hp-article-cat">🪖 Военная форма</span>
-                <span class="pb-hp-article-meta">⏱ 10 мин</span>
-            </div>
-            <span class="pb-hp-article-title">Сколько звезд на погонах у старшего лейтенанта: описание</span>
-        </a>
-<a href="/articles/k/ko/kofta-zhenskaya-kryuchkom-skhema-i-opisanie.html" class="pb-hp-article-card">
-            <div class="pb-hp-article-card-top">
-                <span class="pb-hp-article-cat">🧵 Рукоделие и DIY</span>
-                <span class="pb-hp-article-meta">⏱ 9 мин</span>
-            </div>
-            <span class="pb-hp-article-title">Кофта женская крючком: схема, описание и выбор узора</span>
-        </a>
-<a href="/articles/k/ka/kak-skroit-fartuk.html" class="pb-hp-article-card">
-            <div class="pb-hp-article-card-top">
-                <span class="pb-hp-article-cat">🧵 Рукоделие и DIY</span>
-                <span class="pb-hp-article-meta">⏱ 8 мин</span>
-            </div>
-            <span class="pb-hp-article-title">Как сшить фартук своими руками: выкройки и мастер-класс</span>
-        </a>
-<a href="/articles/k/kr/krasnye-bryuki-sochetanie.html" class="pb-hp-article-card">
-            <div class="pb-hp-article-card-top">
-                <span class="pb-hp-article-cat">🩳 Брюки и шорты</span>
-                <span class="pb-hp-article-meta">⏱ 11 мин</span>
-            </div>
-            <span class="pb-hp-article-title">Красные брюки: сочетание и стильные образы 2026</span>
-        </a>
-<a href="/articles/k/ka/kak-narisovat-korset-na-devushke.html" class="pb-hp-article-card">
-            <div class="pb-hp-article-card-top">
-                <span class="pb-hp-article-cat">🧵 Рукоделие и DIY</span>
-                <span class="pb-hp-article-meta">⏱ 9 мин</span>
-            </div>
-            <span class="pb-hp-article-title">Как нарисовать корсет на девушке: пошаговый урок и анатомия</span>
-        </a>
-<a href="/articles/s/sh/shtany-s-yubkoj.html" class="pb-hp-article-card">
-            <div class="pb-hp-article-card-top">
-                <span class="pb-hp-article-cat">🩳 Брюки и шорты</span>
-                <span class="pb-hp-article-meta">⏱ 9 мин</span>
-            </div>
-            <span class="pb-hp-article-title">Штаны с юбкой: фасоны, стиль и выкройки своими руками</span>
-        </a>
+    <main class="pb-main ms-main">
+        <div class="pb-container">
+            <section class="ms-strip" data-animate>
+                <a href="/category/stil-i-moda/">Стиль и мода</a>
+                <a href="/category/dzhinsy/">Джинсы</a>
+                <a href="/category/rukodelie-i-diy/">Рукоделие и DIY</a>
+                <a href="/category/ukhod-za-odezhdoj/">Уход за одеждой</a>
+                <a href="/category/aksessuary/">Аксессуары</a>
+                <a href="/category/natsionalnaya-i-istoricheskaya-odezhda/">Историческая одежда</a>
+                <a href="/category/voennaya-forma/">Военная форма</a>
+            </section>
 
+            <section class="ms-section ms-cast" data-animate>
+                <div class="ms-section-head">
+                <span class="ms-kicker">Взгляд с примерочной</span>
+                <h2>Одна вещь меняется от ткани, линии и случая</h2>
+                <p>Платье держится на крое, джинсы — на посадке, платок — на оттенке, а форма — на точности мелких деталей.</p>
+                </div>
+                <div class="ms-cast-grid">
+                    <a class="ms-person ms-person-large" href="/category/rukodelie-i-diy/">
+                        <img src="/static/img/home/characters/ref-face-mira-blue-eyes-diy.jpg" alt="Мира разбирает ремонт денима">
+                        <span class="ms-person-role">Ремонт и переделка</span>
+                        <strong>Деним, штопка и переделки для вещей, с которыми еще не хочется расставаться.</strong>
+                    </a>
+                    <a class="ms-person" href="/category/platya-i-sarafany/">
+                        <img src="/static/img/home/characters/selected-portrait-lera-fashion-navigator.jpg" alt="Лера выбирает платье в ателье">
+                        <span class="ms-person-role">Фасоны и силуэты</span>
+                        <strong>Платья, юбки и сарафаны: линия талии, длина, ткань и характер движения.</strong>
+                    </a>
+                    <a class="ms-person" href="/category/dzhinsy/">
+                        <img src="/static/img/home/characters/final-portrait-sonya-central-asian-casual.jpg" alt="Соня подбирает джинсы и кеды">
+                        <span class="ms-person-role">Повседневный гардероб</span>
+                        <strong>Джинсы, кеды и футболки, которые не требуют повода, но все равно выглядят собранно.</strong>
+                    </a>
+                    <a class="ms-person" href="/category/stil-i-moda/">
+                        <img src="/static/img/home/characters/final-portrait-polina-long-blonde.jpg" alt="Полина работает с акцентами образа">
+                        <span class="ms-person-role">Цвет и акценты</span>
+                        <strong>Платок, лента или оттенок добавляют образу интонацию без лишнего шума.</strong>
+                    </a>
+                    <a class="ms-person" href="/category/ukhod-za-odezhdoj/">
+                        <img src="/static/img/home/characters/selected-portrait-vera-textile-care.jpg" alt="Вера проверяет шелковый платок">
+                        <span class="ms-person-role">Ткани и уход</span>
+                        <strong>Шелк, шерсть, пятна и пар: спокойный уход для вещей с характером.</strong>
+                    </a>
+                    <a class="ms-person" href="/category/natsionalnaya-i-istoricheskaya-odezhda/">
+                        <img src="/static/img/home/characters/ref-face-nika-golden-archive.jpg" alt="Ника изучает исторический костюм">
+                        <span class="ms-person-role">Костюм и традиция</span>
+                        <strong>Исторический костюм и традиционные детали без театральной пыли.</strong>
+                    </a>
+                    <a class="ms-person" href="/category/pidzhaki-i-kostyumy/">
+                        <img src="/static/img/home/characters/ref-face-alice-dark-senior.jpg" alt="Алиса держит жакет у доски силуэтов">
+                        <span class="ms-person-role">Образ и уместность</span>
+                        <strong>Жакеты, костюмы и дресс-код, где строгость не отменяет хорошую посадку.</strong>
+                    </a>
                 </div>
             </section>
 
-            <!-- BLOCK 7: FAQ Teaser -->
-            <section class="pb-hp-section" data-animate>
-                <h2 class="pb-hp-section-title">❓ Частые вопросы</h2>
-                <div class="pb-hp-faq">
-                    <details class="pb-hp-faq-item"><summary>Чем полезен раздел о военном этикете?</summary><div class="pb-hp-faq-answer">Этот раздел подробно объясняет правила ношения военной формы, размещения знаков различия и поведения в различных ситуациях. Материалы будут полезны не только военнослужащим, но и реконструкторам, а также тем, кто хочет разбираться в протоколе.</div></details>
-<details class="pb-hp-faq-item"><summary>Можно ли найти советы по реставрации старых вещей?</summary><div class="pb-hp-faq-answer">Да, в разделе рукоделия собраны профессиональные методики восстановления тканей, замены молний и скрытия потертостей. Вы научитесь давать вторую жизнь любимым предметам гардероба без потери их эстетического вида.</div></details>
-<details class="pb-hp-faq-item"><summary>Как правильно подбирать одежду по типу фигуры?</summary><div class="pb-hp-faq-answer">В разделе стиля мы разбираем законы силуэта и сочетаемости цветов для разных типажей. Подробные гиды помогут визуально скорректировать пропорции и подчеркнуть достоинства любой фигуры.</div></details>
-<details class="pb-hp-faq-item"><summary>Есть ли информация об уходе за деликатными тканями?</summary><div class="pb-hp-faq-answer">Блок об уходе содержит исчерпывающие инструкции по стирке шерсти, шелка и технических материалов. Мы объясняем, как сохранить структуру волокон и первозданный вид вещей на долгие годы.</div></details>
-<details class="pb-hp-faq-item"><summary>Подойдет ли сайт для начинающих мастеров шитья?</summary><div class="pb-hp-faq-answer">Конечно, материалы структурированы от базовых понятий до сложных технологических процессов. Вы найдете пошаговые руководства по снятию мерок, построению выкроек и работе с различным оборудованием.</div></details>
+            <section class="ms-section ms-cases" data-animate>
+                <div class="ms-section-head ms-section-head-row">
+                    <div>
+                        <span class="ms-kicker">Сюжеты из гардероба</span>
+                        <h2>Когда вещь просит внимания, ей нужен точный прием</h2>
+                    </div>
+                    <p>Потертость на джинсах, капризный шелк, слишком тихий комплект или строгий жакет — у каждой задачи есть свой способ подойти ближе.</p>
+                </div>
+                <div class="ms-case-grid">
+                    <a class="ms-case" href="/articles/k/ka/kak-zashit-protertye-dzhinsy-mezhdu-nog-vruchnuyu-bez-zaplatki.html">
+                        <img src="/static/img/home/characters/selected-scene-mira-alice-denim.jpg" alt="Мира и Алиса разбирают ремонт джинсов">
+                        <div><span>Деним после носки</span><strong>Починка, после которой вещь не теряет посадку</strong></div>
+                    </a>
+                    <a class="ms-case" href="/category/dzhinsy/">
+                        <img src="/static/img/home/characters/scene-sonya-polina-casual-accent.jpg" alt="Соня и Полина собирают повседневный образ">
+                        <div><span>Будничный комплект</span><strong>Джинсы и кеды с деталью, которая держит настроение</strong></div>
+                    </a>
+                    <a class="ms-case" href="/category/ukhod-za-odezhdoj/">
+                        <img src="/static/img/home/characters/scene-vera-nika-textile-archive.jpg" alt="Вера и Ника изучают деликатную ткань">
+                        <div><span>Деликатная вещь</span><strong>Сначала определить ткань, потом выбирать температуру, пар и движение</strong></div>
+                    </a>
                 </div>
             </section>
 
-            <!-- BLOCK 8: CTA -->
-            <section class="pb-hp-section" data-animate>
-                <div class="pb-hp-cta">
-                    <div class="pb-hp-cta-stripe"></div>
-                    <h2>🧵 Создайте свой идеальный гардероб прямо сейчас</h2>
-                    <p>Получите доступ к проверенным инструкциям по пошиву, ремонту и комбинированию вещей. Станьте экспертом в мире одежды вместе с нами.</p>
+            <section class="ms-section ms-panorama" data-animate>
+                <a class="ms-panorama-card" href="/category/stil-i-moda/">
+                    <img src="/static/img/home/characters/selected-atelier-panorama.jpg" alt="Большая сцена ателье с разбором одежды">
+                    <div>
+                        <span class="ms-kicker">Вся мастерская в кадре</span>
+                        <h2>Иногда весь гардероб встречается на одном столе</h2>
+                        <p>Платье, кеды, потертый деним, шелковый платок и строгий жакет редко живут отдельно. Хороший образ начинается там, где вещь видят целиком.</p>
+                    </div>
+                </a>
+            </section>
+
+            <section class="ms-section ms-wardrobe" data-animate>
+                <div class="ms-section-head">
+                    <span class="ms-kicker">Гардероб по полкам</span>
+                    <h2>От платья на плечиках до пары у двери</h2>
+                </div>
+                <div class="ms-wardrobe-grid">
+                    <a href="/category/platya-i-sarafany/" class="ms-folder"><span>01</span><strong>Платья и сарафаны</strong><em>Линия талии, длина, ткань и повод</em></a>
+                    <a href="/category/dzhinsy/" class="ms-folder"><span>02</span><strong>Джинсы</strong><em>Посадка, потертости, ремонт и удачные пары</em></a>
+                    <a href="/category/rukodelie-i-diy/" class="ms-folder"><span>03</span><strong>Рукоделие и DIY</strong><em>Шов, выкройка и вторая жизнь любимой вещи</em></a>
+                    <a href="/category/ukhod-za-odezhdoj/" class="ms-folder"><span>04</span><strong>Уход за одеждой</strong><em>Стирка, пар, пятна и хранение без паники</em></a>
+                    <a href="/category/aksessuary/" class="ms-folder"><span>05</span><strong>Аксессуары</strong><em>Платки, сумки и детали с нужным акцентом</em></a>
+                    <a href="/category/voennaya-forma/" class="ms-folder"><span>06</span><strong>Военная форма</strong><em>Знаки, порядок ношения и точность линии</em></a>
+                    <a href="/category/natsionalnaya-i-istoricheskaya-odezhda/" class="ms-folder"><span>07</span><strong>Историческая одежда</strong><em>Костюм как часть культуры, а не декорация</em></a>
+                    <a href="/category/obuv/" class="ms-folder"><span>08</span><strong>Обувь</strong><em>Материал, силуэт пары и уход после улицы</em></a>
                 </div>
             </section>
 
-            <!-- BLOCK 9: Popular Tags -->
-            <section class="pb-hp-section" data-animate>
-                <h2 class="pb-hp-section-title">🏷️ Темы</h2>
-                <div class="pb-hp-tags">
-                    <span class="pb-hp-tag">Капсульный гардероб</span> <span class="pb-hp-tag">Уход за кашемиром</span> <span class="pb-hp-tag">Знаки различия</span> <span class="pb-hp-tag">Реставрация джинсов</span> <span class="pb-hp-tag">Дресс-код black tie</span> <span class="pb-hp-tag">Выкройки платьев</span> <span class="pb-hp-tag">История мундира</span> <span class="pb-hp-tag">Ткани и свойства</span> <span class="pb-hp-tag">Стиль милитари</span> <span class="pb-hp-tag">Правила глажки</span> <a href="/category/platya-i-sarafany/" class="pb-hp-tag">👗 Платья и сарафаны</a> <a href="/category/dzhinsy/" class="pb-hp-tag">👖 Джинсы</a> <a href="/category/bryuki-i-shorty/" class="pb-hp-tag">🩳 Брюки и шорты</a> <a href="/category/yubki/" class="pb-hp-tag">👚 Юбки</a> <a href="/category/verkhnyaya-odezhda/" class="pb-hp-tag">🧥 Верхняя одежда</a> <a href="/category/golovnye-ubory/" class="pb-hp-tag">🧢 Головные уборы</a> <a href="/category/kofty-i-svitery/" class="pb-hp-tag">🧶 Кофты и свитеры</a> <a href="/category/rubashki-i-bluzki/" class="pb-hp-tag">👔 Рубашки и блузки</a> <a href="/category/futbolki-i-topy/" class="pb-hp-tag">👕 Футболки и топы</a> <a href="/category/pidzhaki-i-kostyumy/" class="pb-hp-tag">🤵 Пиджаки и костюмы</a> <a href="/category/nizhnee-belyo-i-kolgotki/" class="pb-hp-tag">👙 Нижнее бельё и колготки</a> <a href="/category/voennaya-forma/" class="pb-hp-tag">🪖 Военная форма</a> <a href="/category/aksessuary/" class="pb-hp-tag">👜 Аксессуары</a> <a href="/category/sharfy-i-platki/" class="pb-hp-tag">🧣 Шарфы и платки</a> <a href="/category/stil-i-moda/" class="pb-hp-tag">👠 Стиль и мода</a> <a href="/category/detskaya-odezhda/" class="pb-hp-tag">🧸 Детская одежда</a> <a href="/category/rukodelie-i-diy/" class="pb-hp-tag">🧵 Рукоделие и DIY</a> <a href="/category/ukhod-za-odezhdoj/" class="pb-hp-tag">🧼 Уход за одеждой</a> <a href="/category/natsionalnaya-i-istoricheskaya-odezhda/" class="pb-hp-tag">👘 Национальная и историческая одежда</a> <a href="/category/sportivnaya-odezhda/" class="pb-hp-tag">🏃 Спортивная одежда</a> <a href="/category/spetsodezhda/" class="pb-hp-tag">🦺 Спецодежда</a> <a href="/category/odezhda-dlya-zhivotnykh/" class="pb-hp-tag">🐕 Одежда для животных</a> <a href="/category/obuv/" class="pb-hp-tag">👟 Обувь</a> <a href="/category/drugoe/" class="pb-hp-tag">📁 Другое</a>
+            <section class="ms-section ms-articles" data-animate>
+                <div class="ms-section-head ms-section-head-row">
+                    <div>
+                        <span class="ms-kicker">Полезные закладки</span>
+                        <h2>То, что часто выручает у зеркала и у гладильной доски</h2>
+                    </div>
+                    <a class="ms-link" href="/category/drugoe/">Все темы</a>
+                </div>
+                <div class="ms-article-grid">
+                    <a href="/articles/k/ka/kak-narisovat-kokoshnik-5-klass.html"><span>Архив</span><strong>Кокошник: форма, линия и поэтапный рисунок</strong></a>
+                    <a href="/articles/k/ka/kak-zashit-protertye-dzhinsy-mezhdu-nog-vruchnuyu-bez-zaplatki.html"><span>Ремонт</span><strong>Потертые джинсы: аккуратная штопка без заплатки</strong></a>
+                    <a href="/articles/v/vy/vyvesti-maslyanoe-pyatno-s-kurtki.html"><span>Уход</span><strong>Масляное пятно на куртке: что делать с разными тканями</strong></a>
+                    <a href="/articles/s/sk/skolko-zvezd-na-pogonakh-u-starshego-lejtenanta.html"><span>Форма</span><strong>Погоны старшего лейтенанта: как не ошибиться в деталях</strong></a>
+                    <a href="/articles/k/ko/kofta-zhenskaya-kryuchkom-skhema-i-opisanie.html"><span>DIY</span><strong>Кофта крючком: узор, схема и посадка вещи</strong></a>
+                    <a href="/articles/k/ka/kak-skroit-fartuk.html"><span>Выкройки</span><strong>Фартук своими руками: простая вещь с правильным кроем</strong></a>
                 </div>
             </section>
-
         </div>
     </main>
 
