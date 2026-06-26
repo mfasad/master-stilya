@@ -2076,3 +2076,119 @@ details.pb-accordion[open] summary::before {
     font-weight: 600;
 }
 
+
+/* Master Stilya character homepage redesign */
+.ms-hero { position: relative; min-height: 680px; display: flex; align-items: center; overflow: hidden; background: #151817; color: #fff; }
+.ms-hero-media { position: absolute; inset: 0; }
+.ms-hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+.ms-hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(12,15,14,.88) 0%, rgba(12,15,14,.68) 28%, rgba(12,15,14,.18) 58%, rgba(12,15,14,.06) 100%); z-index: 1; }
+.ms-hero::after { content: ""; position: absolute; inset: auto 0 0; height: 180px; background: linear-gradient(180deg, rgba(252,248,249,0), var(--pb-bg)); z-index: 1; }
+.ms-hero-inner { position: relative; z-index: 2; width: 100%; }
+.ms-hero-copy { max-width: 560px; padding: 86px 0 130px; }
+.ms-kicker { display: inline-flex; align-items: center; gap: 8px; color: #b9d9d2; font-size: 13px; font-weight: 800; letter-spacing: 0; text-transform: uppercase; }
+.ms-hero h1 { margin: 18px 0 16px; font-size: clamp(46px, 7vw, 84px); line-height: .92; letter-spacing: 0; color: #fff; }
+.ms-hero p { margin: 0 0 28px; max-width: 510px; color: rgba(255,255,255,.88); font-size: 19px; line-height: 1.6; }
+.ms-hero-search { max-width: 520px; margin-bottom: 18px; }
+.ms-hero-search .pb-search-box input { min-height: 58px; border: 1px solid rgba(255,255,255,.34); border-radius: 8px; background: rgba(255,255,255,.94); box-shadow: 0 24px 70px rgba(0,0,0,.22); color: #26312d; }
+.ms-route-row { display: flex; flex-wrap: wrap; gap: 10px; max-width: 540px; }
+.ms-route-row a, .ms-strip a, .ms-link { text-decoration: none; border-radius: 999px; color: #17342f; background: #e9f1ee; border: 1px solid rgba(18,62,55,.12); font-weight: 800; }
+.ms-route-row a { padding: 11px 15px; color: #fff; background: rgba(255,255,255,.14); border-color: rgba(255,255,255,.24); backdrop-filter: blur(8px); }
+.ms-main { margin-top: -54px; position: relative; z-index: 3; }
+.ms-strip { display: flex; flex-wrap: wrap; gap: 10px; padding: 18px; margin-bottom: 54px; background: rgba(255,255,255,.88); border: 1px solid rgba(21,38,34,.10); border-radius: 8px; box-shadow: 0 24px 70px rgba(43,22,28,.10); backdrop-filter: blur(10px); }
+.ms-strip a { padding: 10px 14px; background: #fff; }
+.ms-section { margin: 70px 0; }
+.ms-section-head { max-width: 780px; margin-bottom: 26px; }
+.ms-section-head-row { display: flex; justify-content: space-between; gap: 28px; align-items: end; max-width: none; }
+.ms-section-head h2 { margin: 8px 0 10px; color: #24322e; font-size: clamp(30px, 4vw, 52px); line-height: 1.04; letter-spacing: 0; }
+.ms-section-head p { margin: 0; color: #6f625e; line-height: 1.7; font-size: 17px; max-width: 560px; }
+.ms-cast-grid { display: grid; grid-template-columns: 1.12fr repeat(3, 1fr); gap: 18px; align-items: stretch; }
+.ms-person { position: relative; min-height: 390px; overflow: hidden; border-radius: 8px; background: #19211f; color: #fff; text-decoration: none; box-shadow: 0 18px 55px rgba(41,25,31,.12); }
+.ms-person-large { grid-row: span 2; min-height: 800px; }
+.ms-person img, .ms-case img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .45s ease; }
+.ms-person::after, .ms-case::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 28%, rgba(8,12,11,.86)); pointer-events: none; }
+.ms-person:hover img, .ms-case:hover img { transform: scale(1.035); }
+.ms-person-role { position: absolute; left: 16px; right: 16px; bottom: 150px; z-index: 2; color: #c8e0d9; font-size: 13px; font-weight: 900; text-transform: uppercase; letter-spacing: 0; }
+.ms-person strong { position: absolute; left: 16px; right: 16px; bottom: 38px; z-index: 2; color: #fff; font-size: 18px; line-height: 1.25; }
+.ms-person-large strong { font-size: 25px; }
+.ms-person-large .ms-person-role { bottom: 245px; }
+.ms-case-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.ms-case { min-height: 500px; position: relative; overflow: hidden; border-radius: 8px; text-decoration: none; color: #fff; background: #151817; box-shadow: 0 18px 55px rgba(41,25,31,.12); }
+.ms-case-wide { grid-column: span 3; min-height: 430px; }
+.ms-case div { position: absolute; left: 20px; right: 20px; bottom: 20px; z-index: 2; }
+.ms-case span { display: block; color: #b9d9d2; font-size: 13px; font-weight: 900; text-transform: uppercase; margin-bottom: 8px; }
+.ms-case strong { color: #fff; font-size: 23px; line-height: 1.2; max-width: 620px; display: block; }
+.ms-panorama-card {
+    position: relative;
+    display: block;
+    min-height: 560px;
+    overflow: hidden;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    background: #151817;
+    box-shadow: 0 20px 64px rgba(41,25,31,.14);
+}
+.ms-panorama-card img {
+    width: 100%;
+    height: 100%;
+    min-height: 560px;
+    object-fit: cover;
+    display: block;
+    transition: transform .5s ease;
+}
+.ms-panorama-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(10,14,13,.82), rgba(10,14,13,.32) 48%, rgba(10,14,13,.08));
+}
+.ms-panorama-card:hover img { transform: scale(1.025); }
+.ms-panorama-card div {
+    position: absolute;
+    left: 34px;
+    bottom: 34px;
+    z-index: 2;
+    max-width: 560px;
+}
+.ms-panorama-card h2 {
+    margin: 10px 0 12px;
+    color: #fff;
+    font-size: clamp(32px, 4vw, 56px);
+    line-height: 1.02;
+    letter-spacing: 0;
+}
+.ms-panorama-card p { margin: 0; color: rgba(255,255,255,.86); font-size: 18px; line-height: 1.65; }
+.ms-wardrobe-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.ms-folder { min-height: 174px; display: flex; flex-direction: column; justify-content: space-between; padding: 18px; border-radius: 8px; text-decoration: none; color: #24322e; background: #fff; border: 1px solid rgba(36,50,46,.10); box-shadow: 0 16px 45px rgba(43,22,28,.07); }
+.ms-folder span { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; background: #17342f; color: #fff; font-weight: 900; }
+.ms-folder strong { font-size: 20px; line-height: 1.15; }
+.ms-folder em { font-style: normal; color: #80716d; line-height: 1.4; }
+.ms-article-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.ms-article-grid a { min-height: 150px; display: flex; flex-direction: column; justify-content: space-between; padding: 18px; border-radius: 8px; text-decoration: none; color: #24322e; background: linear-gradient(135deg, #fff 0%, #f3ede9 100%); border: 1px solid rgba(36,50,46,.10); }
+.ms-article-grid span { color: #9e3f49; font-size: 13px; font-weight: 900; text-transform: uppercase; }
+.ms-article-grid strong { font-size: 18px; line-height: 1.3; }
+.ms-link { padding: 11px 15px; white-space: nowrap; }
+@media (max-width: 980px) {
+    .ms-hero { min-height: auto; align-items: flex-end; }
+    .ms-hero-media img { object-position: 62% center; }
+    .ms-hero::before { background: linear-gradient(180deg, rgba(12,15,14,.24) 0%, rgba(12,15,14,.9) 67%); }
+    .ms-hero-copy { padding: 360px 0 92px; max-width: none; }
+    .ms-cast-grid, .ms-case-grid, .ms-wardrobe-grid, .ms-article-grid { grid-template-columns: 1fr 1fr; }
+    .ms-person-large, .ms-case-wide { grid-column: span 2; grid-row: auto; min-height: 460px; }
+    .ms-section-head-row { display: block; }
+}
+@media (max-width: 640px) {
+    .ms-hero-copy { padding-top: 300px; }
+    .ms-hero h1 { font-size: 48px; }
+    .ms-hero p { font-size: 16px; }
+    .ms-strip { margin-bottom: 38px; }
+    .ms-section { margin: 48px 0; }
+    .ms-cast-grid, .ms-case-grid, .ms-wardrobe-grid, .ms-article-grid { grid-template-columns: 1fr; }
+    .ms-person, .ms-person-large, .ms-case, .ms-case-wide { grid-column: auto; min-height: 430px; }
+    .ms-case-wide { min-height: 270px; }
+    .ms-panorama-card, .ms-panorama-card img { min-height: 480px; }
+    .ms-panorama-card::after { background: linear-gradient(180deg, rgba(10,14,13,.12), rgba(10,14,13,.86)); }
+    .ms-panorama-card div { left: 18px; right: 18px; bottom: 20px; }
+    .ms-panorama-card p { font-size: 16px; }
+    .ms-section-head h2 { font-size: 32px; }
+}
